@@ -516,7 +516,7 @@
   .container .middle-left {
     height: auto;
     width: 18%;
-    height: 740px;
+    height: 700px;
   }
   .container .middle-left .list-pages {
     width: 100%;
@@ -593,7 +593,7 @@
   }
   .container .middle-main {
     padding-left: 75px;
-    height: 740px;
+    height: 700px;
   }
   .container .middle-main .list-middle-links {
     border-top: 1px solid #373737;
