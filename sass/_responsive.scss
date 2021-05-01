@@ -302,23 +302,23 @@
 			&-left {
 				.top-left-modal{
 					.icon {
-						font-size: 20px;
+						font-size: 0;
 					}
 				}
 				.link {
-					margin-left: 15px;
+					margin-left: 5px;
 					img {
 						width: 20px;
 						height: 20px;
 					}
 					.top-left-title{
-						font-size: 14px;
+						font-size: 12px;
 					}
 				}
 			}
 			&-middle {
 				.form-top {
-					width: 170px;
+					width: 160px;
 					height: 30px;
 					padding: 0;
 					padding-right: 0;
@@ -330,7 +330,7 @@
 					#searchButton {
 						.icon {
 							font-size: 14px;
-							margin-left: -5px;
+							margin-left: -12px;
 							padding: 5px;
 						}
 					}
@@ -348,7 +348,7 @@
 				}
 			}
 			&-right {
-				margin-right: 15px;
+				margin-right: 20px;
 				&-icon {
 					font-size: 15px;
 					margin-right: 8px;
@@ -453,7 +453,7 @@
 				}
 			}
 			&-main {
-				padding-left: 70px;
+				padding-left: 65px;
 				height: 740px;
 				.list-middle-links {
 					border-top: 1px solid #373737;
@@ -544,35 +544,29 @@
 									background-color: #5C5C5C;
 								}
 							}
-
 						}
-						.videos-text-extra {
-							margin-top: 5px;
-							.videos-watching {
-								font-size: 11px;
-								padding: 2px;
-								margin-left: 0px;
-							}
-						}
-					}
-					&-item:hover{
-						.icon-ellipsis {
-							display: inline-block;
-						}
-						.videos-watching {
-							color: #AAAAAA;
-						}
-					}
-					&-item:nth-child(3) {
-						margin-right: 0;
 					}
 				}
 			}
 		}
 	}
 }
+@media only screen and (max-width: 390px) {
+	.container {
+		max-width: 390px;
+	}
+}
 @media only screen and (max-width: 380px) {
 	.container {
 		max-width: 380px;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.container {
+		max-width: 360px;
+	}
+}@media only screen and (max-width: 360px) {
+	.container {
+		max-width: 360px;
 	}
 }

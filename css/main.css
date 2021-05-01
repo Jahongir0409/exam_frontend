@@ -731,20 +731,20 @@
     padding: 5px 0;
   }
   .container .top-left .top-left-modal .icon {
-    font-size: 20px;
+    font-size: 0;
   }
   .container .top-left .link {
-    margin-left: 15px;
+    margin-left: 5px;
   }
   .container .top-left .link img {
     width: 20px;
     height: 20px;
   }
   .container .top-left .link .top-left-title {
-    font-size: 14px;
+    font-size: 12px;
   }
   .container .top-middle .form-top {
-    width: 170px;
+    width: 160px;
     height: 30px;
     padding: 0;
     padding-right: 0;
@@ -756,7 +756,7 @@
   }
   .container .top-middle .form-top #searchButton .icon {
     font-size: 14px;
-    margin-left: -5px;
+    margin-left: -12px;
     padding: 5px;
   }
   .container .top-middle .form-top #searchButton:hover .icon {
@@ -769,7 +769,7 @@
     font-size: 17px;
   }
   .container .top-right {
-    margin-right: 15px;
+    margin-right: 20px;
   }
   .container .top-right-icon {
     font-size: 15px;
@@ -863,7 +863,7 @@
     background-color: #383838;
   }
   .container .middle-main {
-    padding-left: 70px;
+    padding-left: 65px;
     height: 740px;
   }
   .container .middle-main .list-middle-links {
@@ -954,27 +954,25 @@
   .container .middle-main .list-videos-item .videos-text-wrapper .elipsis-wrapper .modal-elipsis:hover {
     background-color: #5C5C5C;
   }
-  .container .middle-main .list-videos-item .videos-text-extra {
-    margin-top: 5px;
-  }
-  .container .middle-main .list-videos-item .videos-text-extra .videos-watching {
-    font-size: 11px;
-    padding: 2px;
-    margin-left: 0px;
-  }
-  .container .middle-main .list-videos-item:hover .icon-ellipsis {
-    display: inline-block;
-  }
-  .container .middle-main .list-videos-item:hover .videos-watching {
-    color: #AAAAAA;
-  }
-  .container .middle-main .list-videos-item:nth-child(3) {
-    margin-right: 0;
+}
+@media only screen and (max-width: 390px) {
+  .container {
+    max-width: 390px;
   }
 }
 @media only screen and (max-width: 380px) {
   .container {
     max-width: 380px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .container {
+    max-width: 360px;
   }
 }
 html {
