@@ -474,9 +474,8 @@
     font-size: 14px;
   }
   .container .top-middle .form-top {
-    width: 200px;
-    height: 35px;
-    padding: 5px;
+    width: 190px;
+    padding: 4px;
     padding-right: 0;
   }
   .container .top-middle .form-top #searchInput {
