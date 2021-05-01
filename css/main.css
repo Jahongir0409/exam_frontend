@@ -972,6 +972,11 @@
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 380px) {
+  .container {
+    max-width: 380px;
+  }
+}
 html {
   box-sizing: border-box;
 }
