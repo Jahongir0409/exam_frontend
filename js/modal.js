@@ -40,16 +40,11 @@ moreWrapper2.onclick = () => {
 	moreWrapper2.classList.add('plus-remove')
 	morePages.classList.add('plus-remove')
 }
-// modalOpen.onclick = () => {
-// 	elipsisWrapper.classList.remove('plus-remove')
-// }
-// modalExit.onclick = () => {
-// 	elipsisWrapper.classList.add('plus-remove')
-// }
-// iframeSmall.onclick = () => {
-// 	modalBox.classList.remove('plus-remove')
-// }
-// modalClose.onclick = () => {
-// 	modalBox.classList.add('plus-remove')
-// 	iframeBig.removeAttribute("src")
-// }
+iframeSmall.onclick = () => {
+	modalBox.classList.remove('plus-remove')
+}
+modalClose.onclick = () => {
+	modalBox.classList.add('plus-remove')
+	iframeBig.removeAttribute("src")
+}
+
