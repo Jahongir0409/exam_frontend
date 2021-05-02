@@ -1103,4 +1103,127 @@ body {
   box-shadow: 0 0 5px white;
 }
 
+@media only screen and (max-width: 450px) {
+  .section-admin .container {
+    width: 450px;
+  }
+  .section-admin .container .admin-top {
+    padding: 10px;
+    background-color: #414141;
+  }
+  .section-admin .container .admin-top .link-main {
+    padding: 5px 7px;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 14px;
+    font-weight: normal;
+    box-shadow: 0 0 5px black;
+  }
+  .section-admin .container .admin-top .link-main:hover {
+    background-color: white;
+    color: red;
+  }
+  .section-admin .container .admin-top h2 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: white;
+    margin-left: auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .section-admin .container .admin-top .icon {
+    margin-right: auto;
+    font-size: 18px;
+    color: white;
+  }
+  .section-admin .container .admin-top img {
+    width: 30px;
+    height: 30px;
+  }
+  .section-admin .container .admin-top span {
+    font-size: 18px;
+  }
+  .section-admin .container #formAdd {
+    box-shadow: 0 0 5px white;
+    width: 260px;
+    padding: 7px 15px;
+    background-color: #3D3D3D;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-admin .container #formAdd .heading-secondary {
+    font-size: 22px;
+    color: white;
+    text-shadow: 0 0 5px red;
+  }
+  .section-admin .container #formAdd label {
+    font-size: 15px;
+  }
+  .section-admin .container #formAdd label input:placeholder-shown {
+    border-color: teal;
+    color: white;
+    font-style: italic;
+  }
+  .section-admin .container #formAdd label input::-webkit-input-placeholder {
+    color: white;
+  }
+  .section-admin .container #formAdd .btn-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section-admin .container #formAdd .btn-wrapper #btnReset {
+    width: 60px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 5px white;
+    margin-right: 10px;
+  }
+  .section-admin .container #formAdd .btn-wrapper #btnAdd {
+    width: 60px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 5px white;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .container {
+    max-width: 420px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .container {
+    max-width: 390px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .container {
+    max-width: 380px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .container {
+    max-width: 370px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
