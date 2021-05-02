@@ -187,19 +187,30 @@
 				}
 				.list-videos {
 					flex-direction: column;
-					padding: 25px;
+					align-items: center;
+					// padding: 25px;
 					&-item {
+
 						margin-right: 0px;
 						margin-bottom: 20px;
 						.div-video {
-							
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 260px;
+							height: 180px;
 							iframe {
-								width: 300px;
-								height: 230px;
+								width: 260px;
+								height: 180px;
 							}
 						}
+						.iframe-image{
+							width: 260px;
+							height: 180px;
+						}
 						.videos-text-wrapper {
-							margin-top: 5px;
+							margin-top: 8px;
+							// margin-left: 20px;
 							.img-videos {
 								width: 30px;
 								height: 30px;
@@ -216,20 +227,18 @@
 							.icon-ellipsis:hover {
 							}
 							.elipsis-wrapper {
-								width: 200px;
+								width: 100px;
 								background-color: #212121;
 								position: absolute;
 								right: 0;
-								top: 40px;
+								top: 20px;
 								.modal-icon{
-									color: #909090;
 									font-size: 20px;
 								}
 								#modalExit {
-									color: white;
-									margin-left: 150px;
-									font-size: 25px;
-									padding-top: 10px;
+									margin-left: 0;
+									font-size: 20px;
+									padding-top: 8px;
 								}
 								#modalExit:hover {
 									opacity: .5;
@@ -237,12 +246,14 @@
 								.modal-elipsis{
 									display: flex;
 									align-items: center;
-									padding: 10px 15px;
+									padding: 5px 10px;
 									.modal-icon {
 										margin-right: 15px;
+										font-size: 14px;
 									}
 									span {
 										color: white;
+										font-size: 14px;
 									}
 								}
 								.modal-elipsis:hover{
@@ -520,40 +531,6 @@
 								margin-left: 80px;
 							}
 							.icon-ellipsis:hover {
-							}
-							.elipsis-wrapper {
-								width: 200px;
-								background-color: #212121;
-								position: absolute;
-								right: 0;
-								top: 40px;
-								.modal-icon{
-									color: #909090;
-									font-size: 20px;
-								}
-								#modalExit {
-									color: white;
-									margin-left: 150px;
-									font-size: 25px;
-									padding-top: 10px;
-								}
-								#modalExit:hover {
-									opacity: .5;
-								}
-								.modal-elipsis{
-									display: flex;
-									align-items: center;
-									padding: 10px 15px;
-									.modal-icon {
-										margin-right: 15px;
-									}
-									span {
-										color: white;
-									}
-								}
-								.modal-elipsis:hover{
-									background-color: #5C5C5C;
-								}
 							}
 						}
 					}
