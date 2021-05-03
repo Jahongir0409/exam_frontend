@@ -11,6 +11,7 @@ formAdd.onsubmit = function (event) {
 	}
 	films.push(obj)
 	window.localStorage.setItem('data',JSON.stringify(films))
+		console.log(inputVideo.value)
 
 	inputTitle.value = null
 	inputImg.value = null

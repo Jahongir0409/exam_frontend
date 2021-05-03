@@ -1,5 +1,10 @@
 
 let listVideos = document.querySelector('.list-videos')
+
+// let body = document.querySelector('.modal-box')
+// let modalClose = document.querySelector('#modalClose')
+// let iframeSmall = document.querySelector('.iframe-small')
+
 // let imgIframe = document.querySelector('.iframe-image')
 
 
@@ -9,6 +14,8 @@ function filmsRenderer (array) {
 	for(element of array) {
 		let li = document.createElement('li')
 		let divVideo = document.createElement('div')
+		let modalBox = document.createElement('div')
+		let modalCloser = document.createElement('ion-icon')
 		let imgIframe = document.createElement('img')
 		let divTxWr = document.createElement('div')
 		let imgVideo = document.createElement('img')
@@ -26,6 +33,10 @@ function filmsRenderer (array) {
 
 		li.classList.add('list-videos-item')
 		divVideo.classList.add('div-video')
+		modalBox.classList.add('modal-box')
+		modalBox.classList.add('remove')
+		modalBox.classList.add('none')
+		modalCloser.classList.add('modal-icon')
 		imgIframe.classList.add('iframe-image')
 		divTxWr.classList.add('videos-text-wrapper')
 		imgVideo.classList.add('img-videos')
@@ -43,13 +54,17 @@ function filmsRenderer (array) {
 
 		modalOpen.id = "modalOpen"
 		modalExit.id = "modalExit"
+		// modalCloser.id = "modalClose"
 
 
 		modalOpen.setAttribute('name', 'ellipsis-vertical')
+		modalCloser.setAttribute('name', 'close')
 		modalExit.setAttribute('name', 'close')
 		removeCircle.setAttribute('name', 'remove-circle')
 
+		
 		divVideo.innerHTML = element.sourceLink
+		modalBox.innerHTML = element.sourceLink
 		imgIframe.setAttribute("src" , element.img)
 		imgVideo.setAttribute("src" , element.img)
 
@@ -59,6 +74,7 @@ function filmsRenderer (array) {
 		vidText2.textContent = "20 thous. times watched"
 		vidText3.textContent = "6 months ago."
 
+		modalBox.appendChild(modalCloser)
 		modalEl.appendChild(removeCircle)
 		modalEl.appendChild(spanDel)
 
@@ -75,20 +91,27 @@ function filmsRenderer (array) {
 		divTxExtra.appendChild(vidText3)
 
 		li.appendChild(divVideo)
+		document.body.appendChild(modalBox)
 		li.appendChild(imgIframe)
 		li.appendChild(divTxWr)
 		li.appendChild(divTxExtra)
 		listVideos.appendChild(li)
 
 		modalOpen.onclick = () => {
-		elWrapper.classList.remove('plus-remove')
+			elWrapper.classList.remove('plus-remove')
 		}
 		modalExit.onclick = () => {
-		elWrapper.classList.add('plus-remove')
+			elWrapper.classList.add('plus-remove')
 		}
 		imgIframe.onclick =  () => {
-		imgIframe.classList.add('plus-remove')
-		}	
+			imgIframe.classList.add('plus-remove')
+			modalBox.classList.remove('remove')
+		}		
+		modalCloser.onclick =  () => {
+			imgIframe.classList.remove('plus-remove')
+			modalBox.classList.add('remove')
+
+		}
 	}
 }
 filmsRenderer(films)

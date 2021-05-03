@@ -4,8 +4,7 @@ let middleLeft = document.querySelector('.middle-left')
 let middleMain = document.querySelector('.middle-main')
 let moreWrapper = document.querySelector('.more-wrapper')
 let elipsisWrapper = document.querySelector('.elipsis-wrapper')
-let iframeSmall = document.querySelector('.iframe-small')
-let modalBox = document.querySelector('.modal-box')
+
 
 iconModal.onclick = () => {
 	iconModal.classList.add('plus-remove')
@@ -39,12 +38,5 @@ moreWrapper2.onclick = () => {
 	moreIcon2.classList.add('plus-remove')
 	moreWrapper2.classList.add('plus-remove')
 	morePages.classList.add('plus-remove')
-}
-iframeSmall.onclick = () => {
-	modalBox.classList.remove('plus-remove')
-}
-modalClose.onclick = () => {
-	modalBox.classList.add('plus-remove')
-	iframeBig.removeAttribute("src")
 }
 

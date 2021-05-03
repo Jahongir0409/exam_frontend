@@ -37,7 +37,7 @@
 }
 .modal-box {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
@@ -45,9 +45,10 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+	z-index: 6688;
 	background-color: rgba(0,0,0, .6);
 	.modal-icon {
-		font-size: 40px;
+		font-size: 50px;
 		color: white;
 		margin-left: 600px;
 		margin-bottom: 20px;
@@ -57,7 +58,7 @@
 	}
 	iframe {
 		width: 750px;
-		height: 480px;
+		height: 450px;
 	}
 }
 .plus-add {
@@ -67,6 +68,9 @@
 	display: none;
 }
 @media only screen and (max-width: 470px) { 
+	.none {
+		display: none;
+	}
 		.left-modal {
 		display: none;
 		.list-pages {
@@ -105,6 +109,6 @@
 		}
 	}
 }
-// .plus-remove {
-// 	display: inline-block;
-// }
+.remove {
+	display: none;
+}
