@@ -105,11 +105,11 @@ function filmsRenderer (array) {
 			elWrapper.classList.add('plus-remove')
 		}
 		imgIframe.onclick =  () => {
-			// imgIframe.classList.add('plus-remove')
+			imgIframe.classList.add('plus-remove')
 			modalBox.classList.remove('remove')
 		}		
 		modalCloser.onclick =  () => {
-			// imgIframe.classList.remove('plus-remove')
+			imgIframe.classList.remove('plus-remove')
 			modalBox.classList.add('remove')
 		}
 	}
