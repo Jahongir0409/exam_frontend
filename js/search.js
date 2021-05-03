@@ -1,8 +1,6 @@
 let searchInput = document.querySelector('#searchInput')
 let btnMic = document.querySelector('.btn-microphone')
 
-
-
 searchInput.onkeyup = (event) => {
 	if (searchInput.value != '') {
 		listVideos.innerHTML = null
@@ -95,7 +93,6 @@ searchInput.onkeyup = (event) => {
 				li.appendChild(divTxWr)
 				li.appendChild(divTxExtra)
 				listVideos.appendChild(li)
-						// listVideos.appendChild(li)
 				modalOpen.onclick = () => {
 					elWrapper.classList.remove('plus-remove')
 				}
@@ -183,7 +180,6 @@ btnMic.onclick = () => {
 					modalExit.setAttribute('name', 'close')
 					removeCircle.setAttribute('name', 'remove-circle')
 
-
 					divVideo.innerHTML = films[index].sourceLink
 					modalBox.innerHTML = films[index].sourceLink
 					imgIframe.setAttribute("src" , films[index].img)
@@ -217,14 +213,13 @@ btnMic.onclick = () => {
 					li.appendChild(divTxWr)
 					li.appendChild(divTxExtra)
 					listVideos.appendChild(li)
-						// listVideos.appendChild(li)
 					modalOpen.onclick = () => {
 						elWrapper.classList.remove('plus-remove')
 					}
 					modalExit.onclick = () => {
 						elWrapper.classList.add('plus-remove')
 					}
-							imgIframe.onclick =  () => {
+					imgIframe.onclick =  () => {
 						imgIframe.classList.add('plus-remove')
 						modalBox.classList.remove('remove')
 					}		
@@ -243,10 +238,6 @@ btnMic.onclick = () => {
 		voice.stop()
 	}
 }
-
-
-
-
 filmsRenderer(films)
 
 

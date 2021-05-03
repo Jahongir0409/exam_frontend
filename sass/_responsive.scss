@@ -87,7 +87,6 @@
 								margin-left: 0;
 								font-size: 11px;
 								margin-top: 3px;
-
 							}
 						}
 						.item-link-pages:hover {
@@ -106,7 +105,6 @@
 				}
 				.list-pages {
 					&-item{
-
 						.item-link-channels {
 							padding: 5px ;
 							flex-direction: column;
@@ -137,7 +135,6 @@
 							background-color:#212121;
 						}
 					}
-	
 				}
 				.copyright-text {
 					padding: 3px;
@@ -191,7 +188,6 @@
 					padding: 5px;
 					padding-top: 15px;
 					&-item {
-
 						margin-right: 0px;
 						margin-bottom: 20px;
 						.div-video {
@@ -261,7 +257,6 @@
 									background-color: #5C5C5C;
 								}
 							}
-	
 						}
 						.videos-text-extra {
 							margin-top: 5px;
@@ -291,16 +286,8 @@
 		display: none;
 	}
 	::-webkit-scrollbar {
-	// width: 20px;
-	width: 5px;
-	background-color: #212121;
-	position: absolute;
-}
-::-webkit-scrollbar-thumb{
-	background-color: #4A4A4A;
-	height: 20%;
-	border-radius: 10px;
-}
+		width: 5px;
+	}
 }
 @media only screen and (max-width: 430px) {
 	.container {

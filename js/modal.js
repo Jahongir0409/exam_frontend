@@ -5,7 +5,6 @@ let middleMain = document.querySelector('.middle-main')
 let moreWrapper = document.querySelector('.more-wrapper')
 let elipsisWrapper = document.querySelector('.elipsis-wrapper')
 
-
 iconModal.onclick = () => {
 	iconModal.classList.add('plus-remove')
 	iconModal2.classList.remove('plus-remove')

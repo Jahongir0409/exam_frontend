@@ -1,14 +1,4 @@
-
 let listVideos = document.querySelector('.list-videos')
-// let formTop = document.querySelector('.form-top')
-
-// let body = document.querySelector('.modal-box')
-// let modalClose = document.querySelector('#modalClose')
-// let iframeSmall = document.querySelector('.iframe-small')
-
-// let imgIframe = document.querySelector('.iframe-image')
-
-
 
 function filmsRenderer (array) {
 	listVideos.innerHTML = null
@@ -55,15 +45,12 @@ function filmsRenderer (array) {
 
 		modalOpen.id = "modalOpen"
 		modalExit.id = "modalExit"
-		// modalCloser.id = "modalClose"
-
 
 		modalOpen.setAttribute('name', 'ellipsis-vertical')
 		modalCloser.setAttribute('name', 'close')
 		modalExit.setAttribute('name', 'close')
 		removeCircle.setAttribute('name', 'remove-circle')
 
-		
 		divVideo.innerHTML = element.sourceLink
 		modalBox.innerHTML = element.sourceLink
 		imgIframe.setAttribute("src" , element.img)
